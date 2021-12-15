@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="description" content="трошки про соню ликову"/>
+    <meta name="og:image">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/heart.png"/>
+    <link rel="icon" type="image/png" href="heart.png"/>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/css/lightgallery.min.css"
+    integrity="sha512-e/7+n/bcByOQg6+rGt7Bx12Si0rpj4Xfe3EeS3W2RDSGGG/qT9rC7ZQCVAgaVAmZKZisvZ1DqaMd66TzfVO/Sw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
     <title>sonya_lykova</title>
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -36,24 +46,61 @@
     <div id="portfolio" class="section section-portfolio">
       <div class="wrapper">
         <h2>мої картінки</h2>
-        <div class="gallery">
+        <div class="gallery"> 
           <div class="gallery--item">
-            <img src="work.jpg">
+            <a
+            href="work.jpg"
+            target="_blank"
+            data-sub-html="<h4>zoolachella</h4><p>постер для анонсу тусовки <a href='http://google.com/' target='_blank'>view logn</a> description later on.</p>"
+          >
+            <img src="work.jpg" />
+          </a>
           </div>
           <div class="gallery--item">
-            <img src="work10.jpg" />
+            <a
+            href="work10.jpg"
+            target="_blank"
+            data-sub-html="<h4>zoolachella</h4><p>ще один варіант постеру для анонсу тусовки <a href='http://google.com/' target='_blank'>view logn</a> description later on.</p>"
+          >
+          <img src="work10.jpg" />
+          </a>
+
           </div>
           <div class="gallery--item">
-            <img src="work2.jpg" />
+            <a
+            href="work2.jpg"
+            target="_blank"
+            data-sub-html="<h4>Нzoolachellaи</h4><p>останній постер <a href='http://google.com/' target='_blank'>view logn</a> description later on.</p>"
+          >
+          <img src="work2.jpg" />
+          </a>
           </div>
           <div class="gallery--item">
-            <img src="work4-09.jpg" />
+            <a
+            href="work4-09.jpg"
+            target="_blank"
+            data-sub-html="<h4>СІК</h4><p>вправа на дизан упакування <a href='http://google.com/' target='_blank'>view logn</a> description later on.</p>"
+          >
+          <img src="work4-09.jpg" />
+          </a>
           </div>
           <div class="gallery--item">
-            <img src="work5-01-01.jpg" />
+            <a
+            href="work5-01-01.jpg"
+            target="_blank"
+            data-sub-html="<h4>марточка</h4><p>колаж шоб поздоровити мою подружку <a href='http://google.com/' target='_blank'>view logn</a> description later on.</p>"
+          >
+          <img src="work5-01-01.jpg" />
+          </a>
           </div>
           <div class="gallery--item">
-            <img src="work7-01.jpg" />
+            <a
+            href="work7-01.jpg"
+            target="_blank"
+            data-sub-html="<h4>запрошення</h4><p>кликала друзів на день подяки <a href='http://google.com/' target='_blank'>view logn</a> description later on.</p>"
+          >
+          <img src="work7-01.jpg" />
+          </a>
           </div>
         </div>
       </div>
@@ -62,9 +109,25 @@
     <div id="contacts" class="section section-contacts">
       <div class="wrapper">
         <h2>контакти</h2>
-        
-        <a href="#top">На початок</a>
+        <a href="https://www.instagram.com/nadenypalto/" target="https://www.instagram.com/nadenypalto/">
+          <img src="мій інстаргам-01.png" style="width:20%;">
+          </a>
       </div>
     </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/lightgallery.min.js"
+      integrity="sha512-+1CyleTPoFvPO15/CfBZ5h6k/mu/qCQe9uxq1tEfO7SRJ52MnCAQ561bAYkvrsGtnG7AkcvKtVwdeoZc8ps7bQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script type="text/javascript">
+      lightGallery(document.getElementById('portfolio'), {
+        selector: '.gallery--item a',
+      });
+    </script>
+
+
   </body>
 </html>
